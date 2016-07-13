@@ -1,0 +1,228 @@
+{
+  "artist" : [
+    {
+      "artistDesc" : "画家蒋志斌，男，现年46岁，出生于1968年5月，现居安徽省黄山市，毕业于中央美院，师从白雪石，现就职于安徽省黄山市钳口民宅博物馆。笔名白畏，号苦行轩主、九香居主。1968年生，安徽黄山人。现担任黄山市潜口民宅博物馆副馆长、中国国家书画院副院长、徽州书画院副院长、徽州美术家协会副主席、中国书画艺术研究会理事、省美协会员、中国文人美术家协会理事、中国武林美术家协会委员、中国武林画院副秘书长、中国书画艺术家创作中心一级书画师等职务。",
+      "artistHeardImaUrl" : "http://localtest.88art.com/resize/avatar/2014/07/28/Art_14065285059815_150x150.png",
+      "artistID" : "593",
+      "artistName" : "蒋志斌"
+    },
+    {
+      "artistDesc" : "丁广义，男，笔名宇泽,1965年9月生于中国天津.结业南开大学东方艺术系和中国中央美术学院国画系,现为中国诗书画协会会员,新炎黄美术俱乐部会员。其作品曾多次荣获海内外书画大赛殊奖,并获得收藏。",
+      "artistHeardImaUrl" : "http://localtest.88art.com/resize/avatar/2014/07/28/Art_14065181096120_150x150.jpg",
+      "artistID" : "592",
+      "artistName" : "丁广义"
+    },
+    {
+      "artistDesc" : "温梅新，女，现年47岁，出生于1967年1月，现居广东省揭阳市，毕业于湖北美院，师从王一，老师。",
+      "artistHeardImaUrl" : "http://localtest.88art.com/resize/avatar/2014/07/28/Art_14065150178767_150x150.jpg",
+      "artistID" : "591",
+      "artistName" : "温梅新"
+    },
+    {
+      "artistDesc" : "方舟，男，现年25岁，出生湖北武汉黄冈市，毕业于武汉理工大学（南湖校区）电子信息工程专业，从事软件开发行业2年半，是一名专业的软件开发工程师！",
+      "artistHeardImaUrl" : "http://localtest.88art.com/resize/avatar/2014/08/08/Art_14074846815928_150x150.jpeg",
+      "artistID" : "590",
+      "artistName" : "方舟"
+    },
+    {
+      "artistDesc" : "陈贞瑞，字墨农，号耕砚苑主，1954年生于济南。1977年毕业于泰山学院美术系。后进修于清华大学美术学院白雪石工作室（何须斋）。擅画山水、牡丹、鲤鱼、葡萄。",
+      "artistHeardImaUrl" : "http://localtest.88art.com/resize/avatar/2014/07/28/Art_14065137485789_150x150.jpg",
+      "artistID" : "589",
+      "artistName" : "陈贞瑞"
+    }
+  ],
+  "artproduct" : [
+    {
+      "artImagUrl" : "http://localtest.88art.com/resize/artwork/2015/05/04/Art_14307096186330_680x420.JPG",
+      "artSize" : "80x120",
+      "artproductID" : "56742"
+    },
+    {
+      "artImagUrl" : "http://localtest.88art.com/resize/artwork/2015/05/04/Art_14307098349620_680x420.jpg",
+      "artSize" : "100x100",
+      "artproductID" : "56746"
+    },
+    {
+      "artImagUrl" : "http://localtest.88art.com/resize/artwork/2015/04/12/Art_14288246695932_680x420.jpg",
+      "artSize" : "80x120",
+      "artproductID" : "55541"
+    },
+    {
+      "artImagUrl" : "http://localtest.88art.com/resize/artwork/2015/05/04/Art_14307095353425_680x420.JPG",
+      "artSize" : "100x100",
+      "artproductID" : "56741"
+    },
+                  {
+      "artImagUrl" : "http://localtest.88art.com/resize/artwork/2015/05/04/Art_14307098349620_680x420.jpg",
+                  "artSize" : "100x100",
+                  "artproductID" : "56746"
+                  
+                  },{
+                  "artImagUrl" : "http://localtest.88art.com/resize/artwork/2015/05/04/Art_14307095353425_680x420.JPG",
+                  "artSize" : "100x100",
+                  "artproductID" : "56741"
+                  },{
+                  "artImagUrl" : "http://localtest.88art.com/resize/artwork/2015/05/04/Art_14307098349620_680x420.jpg",
+                  "artSize" : "100x100",
+                  "artproductID" : "56746"
+                  },{
+                  "artImagUrl" : "http://localtest.88art.com/resize/artwork/2015/04/12/Art_14288246695932_680x420.jpg",
+                  "artSize" : "80x120",
+                  "artproductID" : "55541"
+                  }
+  ],
+  "calligraphy" : [
+    {
+      "calligraphyAuthor" : "郝倩",
+      "calligraphyID" : "59855",
+      "calligraphyName" : "测试1",
+      "calligraphyUrl" : "http://localtest.88art.com/resize/artwork/2016/06/24/Art_14667335569534_100x100.JPG"
+    },
+    {
+      "calligraphyAuthor" : "陈灏",
+      "calligraphyID" : "59735",
+      "calligraphyName" : "aaaaa",
+      "calligraphyUrl" : "http://localtest.88art.com/resize/artwork/2016/03/24/Art_14587970189995_cropcut_min_100x100.jpg"
+    },
+    {
+      "calligraphyAuthor" : "王本起",
+      "calligraphyID" : "59407",
+      "calligraphyName" : "灵山岛写生系列2",
+      "calligraphyUrl" : "http://localtest.88art.com/resize/artwork/2015/06/24/Art_14351528632572_cropcut_min_100x100.JPG"
+    },
+    {
+      "calligraphyAuthor" : "兰伟",
+      "calligraphyID" : "59391",
+      "calligraphyName" : "《静物》",
+      "calligraphyUrl" : "http://localtest.88art.com/resize/artwork/2015/06/24/Art_14351177292337_cropcut_min_100x100.jpg"
+    },
+    {
+      "calligraphyAuthor" : "兰伟",
+      "calligraphyID" : "59390",
+      "calligraphyName" : "《灯》",
+      "calligraphyUrl" : "http://localtest.88art.com/resize/artwork/2015/06/24/Art_14351173753045_cropcut_min_100x100.JPG"
+    },
+    {
+      "calligraphyAuthor" : "兰伟",
+      "calligraphyID" : "59389",
+      "calligraphyName" : "《花》",
+      "calligraphyUrl" : "http://localtest.88art.com/resize/artwork/2015/06/24/Art_14351172682969_cropcut_min_100x100.JPG"
+    }
+  ],
+  "code" : "200",
+  "countriesdraw" : [
+    {
+      "countriesdrawAuthor" : "郝倩",
+      "countriesdrawID" : "59855",
+      "countriesdrawName" : "测试1",
+      "countriesdrawUrl" : "http://localtest.88art.com/resize/artwork/2016/06/24/Art_14667335569534_100x100.JPG"
+    },
+    {
+      "countriesdrawAuthor" : "陈灏",
+      "countriesdrawID" : "59735",
+      "countriesdrawName" : "aaaaa",
+      "countriesdrawUrl" : "http://localtest.88art.com/resize/artwork/2016/03/24/Art_14587970189995_cropcut_min_100x100.jpg"
+    },
+    {
+      "countriesdrawAuthor" : "王本起",
+      "countriesdrawID" : "59407",
+      "countriesdrawName" : "灵山岛写生系列2",
+      "countriesdrawUrl" : "http://localtest.88art.com/resize/artwork/2015/06/24/Art_14351528632572_cropcut_min_100x100.JPG"
+    },
+    {
+      "countriesdrawAuthor" : "兰伟",
+      "countriesdrawID" : "59391",
+      "countriesdrawName" : "《静物》",
+      "countriesdrawUrl" : "http://localtest.88art.com/resize/artwork/2015/06/24/Art_14351177292337_cropcut_min_100x100.jpg"
+    },
+    {
+      "countriesdrawAuthor" : "兰伟",
+      "countriesdrawID" : "59390",
+      "countriesdrawName" : "《灯》",
+      "countriesdrawUrl" : "http://localtest.88art.com/resize/artwork/2015/06/24/Art_14351173753045_cropcut_min_100x100.JPG"
+    },
+    {
+      "countriesdrawAuthor" : "兰伟",
+      "countriesdrawID" : "59389",
+      "countriesdrawName" : "《花》",
+      "countriesdrawUrl" : "http://localtest.88art.com/resize/artwork/2015/06/24/Art_14351172682969_cropcut_min_100x100.JPG"
+    }
+  ],
+  "message" : "REQUESTSUCESS",
+  "miscellaneous" : [
+    {
+      "miscellaneousAuthor" : "郝倩",
+      "miscellaneousID" : "59855",
+      "miscellaneousName" : "测试1",
+      "oildrawUrl" : "http://localtest.88art.com/resize/artwork/2016/06/24/Art_14667335569534_100x100.JPG"
+    },
+    {
+      "miscellaneousAuthor" : "陈灏",
+      "miscellaneousID" : "59735",
+      "miscellaneousName" : "aaaaa",
+      "oildrawUrl" : "http://localtest.88art.com/resize/artwork/2016/03/24/Art_14587970189995_cropcut_min_100x100.jpg"
+    },
+    {
+      "miscellaneousAuthor" : "王本起",
+      "miscellaneousID" : "59407",
+      "miscellaneousName" : "灵山岛写生系列2",
+      "oildrawUrl" : "http://localtest.88art.com/resize/artwork/2015/06/24/Art_14351528632572_cropcut_min_100x100.JPG"
+    },
+    {
+      "miscellaneousAuthor" : "兰伟",
+      "miscellaneousID" : "59391",
+      "miscellaneousName" : "《静物》",
+      "oildrawUrl" : "http://localtest.88art.com/resize/artwork/2015/06/24/Art_14351177292337_cropcut_min_100x100.jpg"
+    },
+    {
+      "miscellaneousAuthor" : "兰伟",
+      "miscellaneousID" : "59390",
+      "miscellaneousName" : "《灯》",
+      "oildrawUrl" : "http://localtest.88art.com/resize/artwork/2015/06/24/Art_14351173753045_cropcut_min_100x100.JPG"
+    },
+    {
+      "miscellaneousAuthor" : "兰伟",
+      "miscellaneousID" : "59389",
+      "miscellaneousName" : "《花》",
+      "oildrawUrl" : "http://localtest.88art.com/resize/artwork/2015/06/24/Art_14351172682969_cropcut_min_100x100.JPG"
+    }
+  ],
+  "oildraw" : [
+    {
+      "oildrawAuthor" : "郝倩",
+      "oildrawID" : "59855",
+      "oildrawName" : "测试1",
+      "oildrawUrl" : "http://localtest.88art.com/resize/artwork/2016/06/24/Art_14667335569534_100x100.JPG"
+    },
+    {
+      "oildrawAuthor" : "陈灏",
+      "oildrawID" : "59735",
+      "oildrawName" : "aaaaa",
+      "oildrawUrl" : "http://localtest.88art.com/resize/artwork/2016/03/24/Art_14587970189995_cropcut_min_100x100.jpg"
+    },
+    {
+      "oildrawAuthor" : "王本起",
+      "oildrawID" : "59407",
+      "oildrawName" : "灵山岛写生系列2",
+      "oildrawUrl" : "http://localtest.88art.com/resize/artwork/2015/06/24/Art_14351528632572_cropcut_min_100x100.JPG"
+    },
+    {
+      "oildrawAuthor" : "兰伟",
+      "oildrawID" : "59391",
+      "oildrawName" : "《静物》",
+      "oildrawUrl" : "http://localtest.88art.com/resize/artwork/2015/06/24/Art_14351177292337_cropcut_min_100x100.jpg"
+    },
+    {
+      "oildrawAuthor" : "兰伟",
+      "oildrawID" : "59390",
+      "oildrawName" : "《灯》",
+      "oildrawUrl" : "http://localtest.88art.com/resize/artwork/2015/06/24/Art_14351173753045_cropcut_min_100x100.JPG"
+    },
+    {
+      "oildrawAuthor" : "兰伟",
+      "oildrawID" : "59389",
+      "oildrawName" : "《花》",
+      "oildrawUrl" : "http://localtest.88art.com/resize/artwork/2015/06/24/Art_14351172682969_cropcut_min_100x100.JPG"
+    }
+  ]
+}
