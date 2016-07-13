@@ -318,7 +318,7 @@
 }
 - (void)screenBtnClick{
     //跳转艺术家筛选控制器
-    ArtistScreeningViewController *screenVC = [[ArtistScreeningViewController alloc]init];
+    ArtistScreeningViewController *screenVC = [[ArtistScreeningViewController alloc] init];
     [self.navigationController pushViewController:screenVC animated:YES];
     
 }
