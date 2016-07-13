@@ -67,7 +67,7 @@
     
     
     _tableView.tableFooterView = c_tableFooderView;
-    
+    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     
     //注册
@@ -224,11 +224,12 @@
             
             
             cell = price_Cell;
-//            return price_Cell;
+
         }
     }
     
-    
+    [cell setNeedsLayout];
+    [cell layoutIfNeeded];
     return cell;
 }
 //返回透视图的高度
@@ -245,9 +246,9 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (indexPath.section == 1) {
-        return 60;
+        return DEF_RESIZE_UI(60);
     } else {
-        return 200;
+        return DEF_RESIZE_UI(160);
     }
 }
 
@@ -284,34 +285,14 @@
     
 }
 
-//- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
-//    if (section == 1) {
-//        UIView *footView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, DEF_DEVICE_WIDTH, 200)];
-//        
-////        footView.backgroundColor = [UIColor redColor];
-//        
-//        return footView;
-//    } else {
-//        
-//        return nil;
-//    }
-//    
-//}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
+
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -438,7 +419,11 @@
 - (void)unEnableGestureOnTableView {
     
     for (UITapGestureRecognizer *tap in _tableView.gestureRecognizers) {
-        tap.enabled = NO;
+        
+        if ([tap isKindOfClass:[UITapGestureRecognizer class]]) {
+            tap.enabled = NO;
+        }
+        
     }
 }
 
@@ -467,7 +452,7 @@
 }
 
 - (void)keyboardHideAnimate:(CGFloat)duration withRect:(CGRect) rect {
-    [self unEnableGestureOnTableView];
+    
     [UIView animateWithDuration:duration animations:^{
         
         CGRect newFrame = CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame));
@@ -475,6 +460,7 @@
         
     } completion:^(BOOL finished) {
         
+        [self unEnableGestureOnTableView];
     }];
 }
 

@@ -12,6 +12,14 @@
     BOOL isKeyboardShowing;
     UITextField *leftTextTf;
     UITextField *rightTextTf;
+    
+    
+    
+    UIView *centerLineView;
+    UILabel *l_DollerLabel;
+    UILabel *r_DollerLabel;
+    UIView *leftView;
+    UIView *rightView;
 }
 @end
 
@@ -32,13 +40,18 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+        
+        
         NSInteger centerLineWidth = 14;
         
         
         // ************************************** 代码清晰度分割线
-        UIView *centerLineView = [[UIView alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.frame)/2+10,
-                                                                          (CGRectGetHeight(self.frame)-1)/2+10,
-                                                                          centerLineWidth, 1)];
+        centerLineView = [[UIView alloc] initWithFrame:CGRectMake(0,
+                                                                          0,
+                                                                          DEF_RESIZE_UI(centerLineWidth),
+                                                                          1)];
+        centerLineView.center = self.contentView.center;
         centerLineView.backgroundColor = [UIColor grayColor];
         [self addSubview:centerLineView];
         
@@ -48,21 +61,26 @@
         
         
         
-        UILabel *l_DollerLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 10, CGRectGetHeight(self.frame)+8)];
+        l_DollerLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, DEF_RESIZE_UI(10),
+                                                                           CGRectGetHeight(self.frame))];
         l_DollerLabel.text = @"¥";
         
-        UILabel *r_DollerLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 10, CGRectGetHeight(self.frame)+8)];
+        r_DollerLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, DEF_RESIZE_UI(10),
+                                                                           CGRectGetHeight(self.frame))];
         r_DollerLabel.text = @"¥";
         
         
         // ************************************** 代码清晰度分割线
-        UIView *leftView = [[UIView alloc] initWithFrame:CGRectMake(10,
-                                                                    5,
-                                                                    CGRectGetWidth(self.frame)/2 - 16 - centerLineWidth/2,
-                                                                    CGRectGetHeight(self.frame))];
+        leftView = [[UIView alloc] initWithFrame:CGRectMake(10,
+                                                             5,
+         CGRectGetWidth(self.frame)/2 - 16 - centerLineWidth/2,
+                                 CGRectGetHeight(self.frame))];
         
         
-        leftTextTf = [[UITextField alloc] initWithFrame:CGRectMake(CGRectGetMaxX(l_DollerLabel.frame)+5, 5,CGRectGetWidth(leftView.frame) - CGRectGetWidth(l_DollerLabel.frame),CGRectGetHeight(leftView.frame))];
+        leftTextTf = [[UITextField alloc] initWithFrame:CGRectMake(CGRectGetMaxX(l_DollerLabel.frame)+5,
+                                                                   5,
+                                                                   CGRectGetWidth(leftView.frame) - CGRectGetWidth(l_DollerLabel.frame),
+                                                                   CGRectGetHeight(leftView.frame))];
         leftTextTf.tag = 0;
         leftTextTf.keyboardType = UIKeyboardTypeNumberPad;
         leftTextTf.placeholder = @" 最低价格";
@@ -71,16 +89,17 @@
         
         
         // ************************************** 代码清晰度分割线
-        //        UIView *rightView = [[UIView alloc] initWithFrame:CGRectMake(CGRectGetMaxX(centerLineView.frame) + 8,
-        //                                                                     8,
-        //                                                                     CGRectGetWidth(leftView.frame),
-        //                                                                     CGRectGetHeight(self.frame))];
-        UIView *rightView = [[UIView alloc]initWithFrame:CGRectMake(CGRectGetMaxX(centerLineView.frame) + 30, 10, CGRectGetWidth(leftView.frame) - CGRectGetWidth(l_DollerLabel.frame),CGRectGetHeight(leftView.frame))];
+        
+        rightView = [[UIView alloc]initWithFrame:CGRectMake(CGRectGetMaxX(centerLineView.frame) + 30,
+                                                                    10,
+                                                                    CGRectGetWidth(leftView.frame) - CGRectGetWidth(l_DollerLabel.frame),
+                                                                    CGRectGetHeight(leftView.frame))];
         
         
         rightTextTf = [[UITextField alloc] initWithFrame:CGRectMake(CGRectGetMaxX(r_DollerLabel.frame)+5,
                                                                     0,
-                                                                    DEF_RESIZE_UI(120), DEF_RESIZE_UI(44))];
+                                                                    DEF_RESIZE_UI(120),
+                                                                    DEF_RESIZE_UI(44))];
         rightTextTf.tag = 1;
         rightTextTf.keyboardType = UIKeyboardTypeNumberPad;
         rightTextTf.placeholder = @" 最高价格";
@@ -194,4 +213,48 @@
     [rightTextTf resignFirstResponder];
 }
 
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    
+    CGFloat lr_height = CGRectGetHeight(self.frame) -10;
+    
+    
+    centerLineView.center = self.contentView.center;
+    
+    l_DollerLabel.frame = CGRectMake(0, 0, DEF_RESIZE_UI(20),
+                               lr_height);
+    
+    r_DollerLabel.frame = CGRectMake(0, 0, DEF_RESIZE_UI(20),
+                                     lr_height);
+    
+    
+    
+    
+    leftView.frame = CGRectMake(8,
+                                5,
+                                CGRectGetWidth(self.frame)/2 - 16 - CGRectGetWidth(centerLineView.frame)/2,
+                                lr_height);
+    
+    leftTextTf.frame = CGRectMake(CGRectGetMaxX(l_DollerLabel.frame)+5,
+                                  0,
+                                  CGRectGetWidth(leftView.frame) - CGRectGetWidth(l_DollerLabel.frame) -5,
+                                  CGRectGetHeight(leftView.frame));
+    
+    
+    
+    
+    
+    
+    rightView.frame = CGRectMake(CGRectGetMaxX(centerLineView.frame) + 8,
+                           5,
+                           CGRectGetWidth(self.frame)/2 - 16 - CGRectGetWidth(centerLineView.frame)/2,
+                                 lr_height);
+    
+    rightTextTf.frame = CGRectMake(CGRectGetMaxX(r_DollerLabel.frame)+5,
+                                   0,
+                                   CGRectGetWidth(rightView.frame) - CGRectGetWidth(r_DollerLabel.frame) -5,
+                                   CGRectGetHeight(rightView.frame));
+}
 @end

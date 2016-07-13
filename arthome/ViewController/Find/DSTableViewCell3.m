@@ -70,7 +70,7 @@
     CGFloat v_space = 8;
     CGFloat h_space = 8;
     CGFloat buttonWidth = (CGRectGetWidth([UIScreen mainScreen].bounds) - (6*h_space))/5;
-    CGFloat buttonHeight = 40;
+    CGFloat buttonHeight = 30;
     
     
     _subMenuBtnContaierView = [[UIView alloc] initWithFrame:CGRectMake(0,
@@ -112,14 +112,13 @@
     }
 }
 
-//- (void)layoutSubviews {
-//    [super layoutSubviews];
-//
-//    _subMenuBtnContaierView = [[UIView alloc] initWithFrame:CGRectMake(0,
-//                                                                      50,
-//                                                                      CGRectGetWidth(self.frame),
-//                                                                      150)];
-//}
+- (void)layoutSubviews {
+    [super layoutSubviews];
+
+    _subMenuBtnContaierView.frame = CGRectMake(0,
+                                               50,
+                                               CGRectGetWidth(self.frame),
+                                               CGRectGetHeight(self.frame) -50);}
 
 
 - (void)setSelectedState:(BOOL)state {
